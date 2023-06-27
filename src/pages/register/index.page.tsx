@@ -5,7 +5,7 @@ import {
   Text,
   TextInput,
 } from '@augustogomes-ui/react'
-import { Container, FormError, Form, Header } from './styels'
+import { Container, FormError, Form, Header } from './styles'
 import { ArrowRight } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -54,6 +54,8 @@ export default function Register() {
         name: data.name,
         username: data.username,
       })
+
+      await router.push('/register/connect-calendar')
     } catch (error) {
       if (error instanceof AxiosError && error?.response?.data?.message) {
         alert(error.response.data.message)
