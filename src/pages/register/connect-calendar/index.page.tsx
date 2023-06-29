@@ -2,10 +2,10 @@ import { Button, Heading, MultiStep, Text } from '@augustogomes-ui/react'
 import { Container, Header } from '../styles'
 import { ArrowRight } from 'phosphor-react'
 import { ConnectBox, ConnectItem } from './styles'
-import { signIn, useSession } from 'next-auth/react'
+import { signIn } from 'next-auth/react'
 
 export default function ConnectCalendar() {
-  const session = useSession()
+  // const session = useSession()
 
   return (
     <Container>
