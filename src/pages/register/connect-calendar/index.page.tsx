@@ -45,7 +45,6 @@ export default function ConnectCalendar() {
             </Button>
           )}
         </ConnectItem>
-
         {hasAuthError && (
           <AuthError size="sm">
             Falha ao se conectar ao Google, verifique se você habilitou as
