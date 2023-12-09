@@ -2,6 +2,7 @@ import { Avatar, Heading, Text } from '@augustogomes-ui/react'
 import { Container, UserHead } from './styles'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { prisma } from '@/lib/prisma'
+import { ScheduleForm } from './SchedulerForm'
 
 interface ScheduleProps {
   user: {
@@ -19,6 +20,8 @@ export default function Schedule({ user }: ScheduleProps) {
         <Heading>{user.name}</Heading>
         <Text>{user.bio}</Text>
       </UserHead>
+
+      <ScheduleForm />
     </Container>
   )
 }
