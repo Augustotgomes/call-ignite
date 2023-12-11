@@ -7,8 +7,8 @@ import {
   TimePickerList,
 } from './styles'
 
-export function CalenderStep() {
-  const isDateSelected = true
+export function CalendarStep() {
+  const isDateSelected = false
 
   return (
     <Container isTimePickerOpen={isDateSelected}>
